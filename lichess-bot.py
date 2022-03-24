@@ -234,7 +234,7 @@ def play_game(li, game_id, control_queue, engine_factory, user_profile, config, 
             self.room = room
     opponent = game.black.name if game.white.name == user_profile["username"] else game.white.name
     conversation.send_reply(SendLine('player'), f'Hello {opponent}, Welcome to the game, Good luck! Type !help for a list of commands I can respond to.')
-    conversation.send_reply(SendLine('spectator'), f'Welcome to my game spectators!')
+    conversation.send_reply(SendLine('spectator'), f'Welcome to the game spectators!')
     
     logger.info("+++ {}".format(game))
 
